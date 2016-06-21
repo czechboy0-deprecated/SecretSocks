@@ -43,3 +43,4 @@ Please create an issue with a description of your problem or open a pull request
 :v: License
 -------
 MIT
+
