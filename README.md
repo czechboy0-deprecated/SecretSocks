@@ -1,26 +1,16 @@
 # SecretSocks
 
-[![Build Status](https://travis-ci.org/czechboy0/Socks.svg?branch=master)](https://travis-ci.org/czechboy0/Socks)
+[![Build Status](https://travis-ci.org/czechboy0/Socks.svg?branch=master)](https://travis-ci.org/czechboy0/SecretSocks)
 ![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20OS%20X-blue.svg)
 ![Package Managers](https://img.shields.io/badge/package%20managers-swiftpm-yellow.svg)
 
-[![Twitter Czechboy0](https://img.shields.io/badge/twitter-czechboy0-green.svg)](http://twitter.com/czechboy0)
-[![Twitter matthiaskr1](https://img.shields.io/badge/twitter-matthiaskr1-green.svg)](http://twitter.com/matthiaskr1)
-
-> Secure Sockets addon for Socks.
-
-# Supported socket types
-
-| | TCP | UDP |
-| --- | --- | --- |
-| Client | ✅ | ✅ | 
-| Server | ✅ | ✅ |
+> SSL/TLS addon for [Socks](https://github.com/czechboy0/Socks).
 
 :wrench: Usage
 ------------
-This package extends `RawSocket` from socks to provide a `makeSecret()` method. 
+This package extends `RawSocket` from [Socks](https://github.com/czechboy0/Socks) to provide a `makeSecret()` method. 
 
-When called, this method initializes an Secure-Socket Layer socket to send and receive data securely.
+When called, this method initializes an SSL/TLS socket to send and receive data securely.
 
 # Installation
 
@@ -45,3 +35,11 @@ try secureSocket.connect()
 try secureSocket.send([0x00, 0x01, 0x02, ...])
 let response = try secureSocket.receive(max: 2048)
 ```
+
+:gift_heart: Contributing
+------------
+Please create an issue with a description of your problem or open a pull request with a fix.
+
+:v: License
+-------
+MIT
