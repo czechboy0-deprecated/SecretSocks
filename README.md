@@ -20,6 +20,8 @@ When called, this method initializes an SSL/TLS socket to send and receive data 
 .Package(url: "https://github.com/czechboy0/SecretSocks.git", majorVersion: 0, minor: 1)
 ```
 
+You also need to install the system `openssl` package, see instructions here: https://github.com/qutheory/ssl#building
+
 # Example
 
 Since `TCPInternetSocket` inherits from `RawSocket`, the `makeSecret()` method is available.
