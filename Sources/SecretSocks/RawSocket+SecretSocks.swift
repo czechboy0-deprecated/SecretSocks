@@ -1,4 +1,4 @@
-import SSL
+import TLS
 import SocksCore
 
 extension RawSocket {
@@ -9,15 +9,15 @@ extension RawSocket {
         - parameter certificates: SSL Certificates for the Server, use .none for Client
     */
     public func makeSecret(
-        mode: SSL.Mode = .client,
-        certificates: SSL.Certificates = .none
-    ) throws -> SSL.Socket {
-        let context = try SSL.Context(
+        mode: TLS.Mode = .client,
+        certificates: TLS.Certificates = .none
+    ) throws -> TLS.Socket {
+        let context = try TLS.Context(
             mode: mode,
             certificates: certificates
         )
 
-        return try SSL.Socket(
+        return try TLS.Socket(
             context: context,
             descriptor: descriptor
         )
@@ -26,8 +26,8 @@ extension RawSocket {
     /**
         Creates a Secure Socket from the SSL Context provided.
     */
-    public func makeSecret(context: SSL.Context) throws -> SSL.Socket {
-        return try SSL.Socket(
+    public func makeSecret(context: TLS.Context) throws -> TLS.Socket {
+        return try TLS.Socket(
             context: context,
             descriptor: descriptor
         )
