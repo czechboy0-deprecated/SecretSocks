@@ -1,5 +1,5 @@
 import XCTest
-@testable import SecretSocksTestSuite
+@testable import SecretSocksTests
 
 XCTMain([
      testCase(SecretSocksTests.allTests),
