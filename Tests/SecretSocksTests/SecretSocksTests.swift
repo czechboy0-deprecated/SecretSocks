@@ -47,7 +47,7 @@ extension Sequence where Iterator.Element == UInt8 {
             case .error:
                 break
             case .scalarValue(let unicodeScalar):
-                str.append(unicodeScalar)
+                str.append(String(unicodeScalar))
             }
         }
     }
