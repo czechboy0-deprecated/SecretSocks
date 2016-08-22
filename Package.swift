@@ -7,6 +7,6 @@ let package = Package(
     ],
     dependencies: [
     	.Package(url: "https://github.com/czechboy0/Socks.git", majorVersion: 0, minor: 12),
-    	.Package(url: "https://github.com/qutheory/tls.git", majorVersion: 0, minor: 4),
+    	.Package(url: "https://github.com/vapor/tls.git", majorVersion: 0, minor: 5),
     ]
 )
