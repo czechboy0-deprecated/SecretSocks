@@ -6,7 +6,7 @@
 
 > SSL/TLS addon for [Socks](https://github.com/czechboy0/Socks).
 
-# :warning: This project is now depricated and will not receive any further maintenance. It will be deleted at the end of 2016.
+# :warning: This project is now depricated and will not receive any further maintenance.
 
 :wrench: Usage
 ------------
