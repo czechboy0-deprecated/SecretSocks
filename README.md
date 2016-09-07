@@ -1,4 +1,4 @@
-# [DEPRICATED] SecretSocks
+# [DEPRECATED] SecretSocks
 
 [![Build Status](https://travis-ci.org/czechboy0/Socks.svg?branch=master)](https://travis-ci.org/czechboy0/SecretSocks)
 ![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20OS%20X-blue.svg)
@@ -6,7 +6,7 @@
 
 > SSL/TLS addon for [Socks](https://github.com/czechboy0/Socks).
 
-# :warning: This project is now depricated and will not receive any further maintenance.
+# :warning: This project is now deprecated and will not receive any further maintenance.
 
 :wrench: Usage
 ------------
